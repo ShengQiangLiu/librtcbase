@@ -1,0 +1,12 @@
+prefix=/home/aries/lessons/source/abseil-cpp-master/install
+exec_prefix=${prefix}
+libdir=/home/aries/lessons/source/abseil-cpp-master/install/lib
+includedir=/home/aries/lessons/source/abseil-cpp-master/install/include
+
+Name: absl_civil_time
+Description: Abseil civil_time library
+URL: https://abseil.io/
+Version: head
+Requires:
+Libs: -L${libdir}  -labsl_civil_time
+Cflags: -I${includedir} -DNOMINMAX

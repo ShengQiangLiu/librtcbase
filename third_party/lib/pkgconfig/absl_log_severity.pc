@@ -1,0 +1,12 @@
+prefix=/home/aries/lessons/source/abseil-cpp-master/install
+exec_prefix=${prefix}
+libdir=/home/aries/lessons/source/abseil-cpp-master/install/lib
+includedir=/home/aries/lessons/source/abseil-cpp-master/install/include
+
+Name: absl_log_severity
+Description: Abseil log_severity library
+URL: https://abseil.io/
+Version: head
+Requires: absl_core_headers = head
+Libs: -L${libdir}  -labsl_log_severity
+Cflags: -I${includedir} -DNOMINMAX
